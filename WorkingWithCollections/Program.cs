@@ -11,6 +11,7 @@ namespace WorkingWithCollections
     {
         static void Main(string[] args)
         {
+            /*
             Car car1 = new Car();
             car1.VIN = "A1";
             car1.Make = "Oldsmobile";
@@ -25,6 +26,7 @@ namespace WorkingWithCollections
             b1.Author = "Robert Tabor";
             b1.Title = "Microsoft .NET XML Web Services";
             b1.ISBN = "0-000-00000-0";
+            */
 
             /*
             // ArrayLists are dynamically sized,
@@ -51,7 +53,7 @@ namespace WorkingWithCollections
                 Console.WriteLine(car.Model);
             }
             */
-
+            /*
             // Dictionary <TKey, TValue>
             Dictionary<string, Car> myDictionary = new Dictionary<string, Car>();
 
@@ -59,6 +61,21 @@ namespace WorkingWithCollections
             myDictionary.Add(car2.VIN, car2);
 
             Console.WriteLine(myDictionary["B2"].Make);
+            */
+
+            //string[] names = { "Bob", "Steve", "Brian", "Chuck" };
+
+            // Object initializer
+            // No need for a Constructor
+            //Car car1 = new Car() { Make = "BMW", Model = "750li", VIN = "C3" };
+            //Car car2 = new Car() { Make = "Toyota", Model = "4Runner", VIN = "D4" };
+
+            // Collection initializer
+            List<Car> myList = new List<Car>()
+            {
+                new Car { Make="Oldsmobile", Model= "Cutlas Supreme", VIN = "E5" },
+                new Car { Make = "Nissan", Model = "Altima", VIN = "F6" }
+            };
 
             Console.ReadLine();
         }
