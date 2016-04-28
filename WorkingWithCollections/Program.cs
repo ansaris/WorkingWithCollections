@@ -77,6 +77,12 @@ namespace WorkingWithCollections
                 new Car { Make = "Nissan", Model = "Altima", VIN = "F6" }
             };
 
+            Dictionary<string, Car> myDictionary = new Dictionary<string, Car>()
+            {
+                { "G7", new Car() { Make = "Honda", Model = "Accord", VIN = "G7" }},
+                { "H8", new Car() { Make = "Volkswagon", Model = "Beetle", VIN = "H8"} }
+            };
+
             Console.ReadLine();
         }
     }
